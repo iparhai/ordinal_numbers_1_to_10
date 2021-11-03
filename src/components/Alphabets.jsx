@@ -64,6 +64,7 @@ const Alphabets = (props) => {
     useEffect(() => {
 
         checkSize();
+        setChSet(chSet.sort(() => Math.random() - 0.5))
 
         window.addEventListener("resize", checkSize);
         // dragThis.current.addEventListener('touchmove', checkDrag);
