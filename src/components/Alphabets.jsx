@@ -109,8 +109,22 @@ const Alphabets = (props) => {
 
     return (
 
-        <div className="noselect parentDiv" >
+        <div className="noselect parentDiv" style={{ display: "flex" }}>
+            <div >
+                {blanks.map((item, index) => {
+                    return (
+                        <h1 onClick={() => {
 
+                            setBlanks(
+                                ["?"]
+                            )
+                            setAnswer("")
+                        }}>
+                            <u>{item}</u> &nbsp;
+                        </h1>
+                    )
+                })}
+            </div>
             <div className="dropBox"
                 ref={container}
             >
@@ -132,24 +146,12 @@ const Alphabets = (props) => {
                     </Layer>
                 </Stage>
             </div>
-            <div >
-                {blanks.map((item, index) => {
-                    return (
-                        <h1 onClick={() => {
 
-                            setBlanks(
-                                ["?"]
-                            )
-                            setAnswer("")
-                        }}>
-                            <u>{item}</u> &nbsp;
-                        </h1>
-                    )
-                })}
+            <div>
+                <button className="App-link" style={{marginLeft : "20px", marginBottom : "10vh"}}onClick={() => {
+                    props.onClick()
+                }}> <i class="fa fa-paper-plane" aria-hidden="true"></i> </button>
             </div>
-            <button className="App-link" onClick={() => {
-                props.onClick()
-            }}> <i class="fa fa-paper-plane" aria-hidden="true"></i> </button>
         </div >
 
     );
