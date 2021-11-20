@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/ordinal_numbers_1_to_10/precache-manifest.c4c9b66406efd78934de62c1b03e3519.js"
+  "/ordinal_numbers_1_to_10/precache-manifest.b70b00756e971e72fa113a3d09c96461.js"
 );
 
 workbox.clientsClaim();
