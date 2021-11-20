@@ -63,7 +63,7 @@ class MathQuiz extends React.Component {
               <Timmer {...this.props} />
               <Lifes {...this.props} />
               <Points {...this.props} />
-              <Hints />
+              {/* <Hints /> */}
             </div>
             <div>
               <Quiz {...this.props} />
